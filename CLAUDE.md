@@ -14,12 +14,17 @@ fine-tuning, and evaluation.
 - README.md: human-facing project description
 
 ## Conventions
-- Notebooks are saved from Google Colab via File > Save a copy in GitHub
+
 - All code is Python 3.11+
-- tiktoken is used for tokenization experiments
 - Commits use descriptive messages, not "update" or "fix"
 
 ## Do Not
 - Delete files or directories without confirming first
 - Push to main without checking what is staged
 - Commit API keys or any file in .env
+- 
+## Week-1
+
+- OpenAI is used to test Amharic/English supplied passages
+- Notebooks are saved from Google Colab via save in GitHub
+- tiktoken is used for the tokenization experiment
