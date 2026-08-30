@@ -1,1 +1,46 @@
+##Measure the multilingual tax with a real tokenizer, and build it inside the repository that will carry your work all term.
+
+##Why this assignment
+Tokenization is the first layer of the stack, the seam where your text becomes something a model can process. The choices made there set the cost of every prompt and the fairness of a system across languages. This week you measure that directly, and you do it inside the repository that carries your work for the next eight weeks. By the end you have two things worth keeping: a clean repository a stranger can read, and a short analysis that proves a real claim with real numbers.
+
+##Learning goals
+Quantify the multilingual tax: how many more tokens the same meaning costs in one language than another.
+Read a tokenizer's behavior at the level of individual splits, not just totals.
+Connect tokenization to cost and context-window budgets.
+Treat your course repository as working infrastructure, not homework storage.
+
+##What you will submit
+One Jupyter or Colab notebook, committed to your course repository and opened as a pull request. 
+
+##Part 1: Stand up your repository
+
+This is the foundation you will build on every week, so do it once and do it well.
+
+Create a public repository (a suggested name is cosc-650).
+Add a README.md a stranger could read: what the project is, how it is organized, and the tools you use.
+Add an agent context file that your AI coding tool reads, documenting the project's context and conventions so any AI session starts informed. AGENTS.md is the cross-tool convention; CLAUDE.md and GEMINI.md are tool-specific variants. Use whichever your tool reads. The GitHub as Infrastructure reading has a starter template you can adapt.
+Do your Week 1 work on a branch, then open a pull request to main. You will follow this push-via-PR pattern every week.
+
+##Part 2: The analysis
+
+Work entirely in tiktoken. No model API is needed, which means no key and no cost.
+
+Choose a passage of at least 100 words from a non-English source: a news article, an encyclopedia entry, or a public-domain text. Count words by whitespace, or by characters if your language does not separate words. Find or write a faithful English translation; an AI translation is acceptable if you verify it.
+Tokenize both with the GPT-4 tokenizer (cl100k_base) and the GPT-4o tokenizer (o200k_base). Report token counts and character counts for each.
+Compute the multilingual tax: the ratio of non-English tokens to English tokens, for both tokenizers.
+Identify three specific token splits that reveal the tokenizer's English-corpus bias. For each, show the actual sub-token pieces and contrast with the token count of the English equivalent, which is not always a single token.
+To see the shape of a split before you start: the word water is a single token, while dignity breaks into three pieces (d, ign, ity). Your job is to find where that asymmetry falls hardest between your two languages.
+
+##Part 3: Evaluate with real figures
+
+Translate your token counts into engineering consequences:
+
+How many copies of your passage fit within a 128,000-token context window in each language?
+The per-request cost multiplier the tax implies if you were billed per token.
+State the actual figures your notebook computed. An unquantified claim does not earn the points.
+
+##Part 4: Find one failure and explain it
+
+Every assignment this term includes one failing or surprising case with a mitigation. For tokenization, find an input where the token count defies intuition: a glitch token, an emoji or combining character that explodes into many tokens, whitespace that changes the count, or a short word in your language that fragments far worse than the rest. Show it, explain why it happens, and state how you would budget or normalize around it in production.
+
 
