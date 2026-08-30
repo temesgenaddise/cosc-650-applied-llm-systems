@@ -12,11 +12,13 @@
 ## Steps followed
 
 Amharic/Ethiopian language passage with 100 words was taken and translated using Google Translate.
+
 Tokenization analysis was done using GPT-4 and GPT-4o
 
 ## Results found
 
 The Amharic language passage needed way more tokens than the same passage in English.
+
 Multilingual tax: Amharic/English was high.
 
 ## Conclusion
