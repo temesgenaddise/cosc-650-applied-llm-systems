@@ -34,13 +34,17 @@ fine-tuning, and evaluation.
 - ## Purpose of the assignment
 
 •	Creating a forward pass that turns a given prompt into a probability distribution.
+
 •	Building a sampling step that turns that distribution into a choice. 
+
 •	To see the effect of temperature, top-k, and top-p on the token distribution of a model.
 
 ## Technologies used:
 
 •	DistilGPT2
+
 •	OpenAI
+
 •	Jupyter/Python on Google Colab
 
 
