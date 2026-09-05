@@ -23,8 +23,25 @@ fine-tuning, and evaluation.
 - Push to main without checking what is staged
 - Commit API keys or any file in .env
 - 
-## Week-1
+## Week-1 Assignment
 
 - OpenAI is used to test Amharic/English supplied passages
-- Notebooks are saved from Google Colab via save in GitHub
+- Notebooks are saved from Google Colab via Save in GitHub
 - tiktoken is used for the tokenization experiment
+
+- ## Week-2 Assignment
+
+- ## Purpose of the assignment
+
+•	Creating a forward pass that turns a given prompt into a probability distribution.
+•	Building a sampling step that turns that distribution into a choice. 
+•	To see the effect of temperature, top-k, and top-p on the token distribution of a model.
+
+## Technologies used:
+
+•	DistilGPT2
+•	OpenAI
+•	Jupyter/Python on Google Colab
+
+
+
