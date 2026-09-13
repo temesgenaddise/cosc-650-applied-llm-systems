@@ -47,5 +47,17 @@ fine-tuning, and evaluation.
 
 •	Jupyter/Python on Google Colab
 
+# Week-3: Prompt Engineering Artifact Project
+
+This week's notebook evaluates two versioned security-triage prompts across 12 test cases, using exact-match severity accuracy and semantic similarity for rationales.
+
+# Technologies Used
+Google Colab environment
+
+OPENAI/GPT-4o
+
+GEMINE/API
+
+
 
 
