@@ -58,6 +58,21 @@ OPENAI/GPT-4o
 
 GEMINE/API
 
+# Week-4 Multi_Tool Assistant
+
+The Multi -Tool Assistant  notebook uses Gemini Flash through Google's OpenAI-compatible endpoint. It defines three constrained tools, implements a complete request-and-response loop, provides a guarded arithmetic evaluator, records every tool call, evaluates the tools, and demonstrates structured recovery from a real invalid-date failure.
+
+# Technologies used:
+
+Gemini Flash 3.8.
+
+OpenAI/gpg-4o
+
+Google collab
+
+
+
+
 
 
 
