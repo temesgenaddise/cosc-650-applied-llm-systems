@@ -70,6 +70,20 @@ OpenAI/gpg-4o
 
 Google collab
 
+# Week-5
+- RAG Pipeline with Retrieval Evaluation
+
+- This week's notebook builds a complete pipeline and compares retrieval choices with real precision and recall.
+
+- Used Python
+  
+- Sentence Transformers
+  
+- FAISS
+  
+- pandas
+  
+- Gemini-flash 3.8
 
 
 
