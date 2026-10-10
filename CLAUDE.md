@@ -85,6 +85,27 @@ Google collab
   
 - Gemini-flash 3.8
 
+# Week 7: Healthcare Administrative Intent Classification
+
+## Objective
+Classify healthcare administrative requests into exactly one of five labels: billing_question, find_clinic, get_lab_results', refill_medication, or schedule_appointment. 
+
+## Dataset and reproducibility
+Synthetic, template-generated text with random seed 7; no real patient records. The source notebook generates 907 raw records, removes 7 invalid and 593 duplicate records, leaving 307 unique valid records. Stratified balanced splits contain 200 training examples (40 per intent) and 50 evaluation examples (10 per intent); 57 cleaned records are unused in the split. Files: clean_dataset.csv, train.csv, evaluation.csv. 
+
+## Retrieval and evaluation
+Embed training text with sentence-transformers/all-MiniLM-L6-v2, L2-normalize, and search a FAISS `IndexFlatIP` index for the top 4 examples. Normalized inner product equals cosine similarity. Compare zero-shot against dynamically retrieved few-shot prompts on the same held-out 50 examples using Gemini, temperature 0. 
+
+## Technologies used
+
+Google colab
+
+Gemini with API
+
+Sentence transformers/all-miniLM-L6-V2
+
+Oepnai
+
 
 
 
