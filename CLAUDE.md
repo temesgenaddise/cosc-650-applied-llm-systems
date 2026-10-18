@@ -106,8 +106,23 @@ Sentence transformers/all-miniLM-L6-V2
 
 Oepnai
 
+ # Week 8: Healthcare Administrative Assistant
+- Purpose
+  
+This week's assignment contains a Jupyter capstone prototype for healthcare administrative assistance. It classifies requests, retrieves relevant administrative policy, optionally logs a simulated workflow route, and produces a policy-grounded response. The primary notebook is Week_8_capstone.ipynb.
 
+# Architecture
+User request → semantic few-shot intent classification → intent-conditioned query expansion → FAISS policy retrieval → optional constrained workflow routing → grounded prompt → optional Gemini response → logging/evaluation.
 
+# Technologies used
+- Python 3 and Jupyter Notebook: 
+- NumPy and pandas: 
+- Sentence Transformers (all-MiniLM-L6-v2): 
+- FAISS (faiss-cpu==1.12.0, IndexFlatIP): 
+- scikit-learn: 
+- OpenAI Python SDK with a Google Gemini-compatible endpoint: 
+- Python standard library (os, re, json, ast, operator, pathlib, hashlib, unittest. mock, etc.): 
+- GEMINI_API_KEY: 
 
 
 
